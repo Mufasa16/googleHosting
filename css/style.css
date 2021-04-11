@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("/font/roboto.ttf");
+  font-display: swap;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 85vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 0.98em;
+}
+
+.carbon-image {
+  width: 12px;
+}
+
+nav {
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav span {
+  margin-right: 20px;
+}
+.google-logo {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.email-icon {
+  color: #fff;
+  background-color: purple;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.google-grid-box {
+  width: 25px;
+  cursor: pointer;
+}
+
+.google-search-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.google-search-icon,
+.google-microphone {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #dfe1e5;
+  cursor: pointer;
+}
+
+.google-search-icon {
+  left: 10px;
+}
+
+.google-microphone {
+  right: 10px;
+}
+
+.google-search-box input {
+  padding: 15px 40px;
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #dfe1e5;
+}
+
+.google-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.google-btns button {
+  padding: 10px;
+  font-size: 1.1em;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.google-offered-in {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.google-offered-in a {
+  margin-left: 10px;
+}
+.google-offered-in a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #f2f2f2;
+  color: rgb(94, 86, 86);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  min-height: 15vh;
+}
+
+.about-made {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+footer a {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .google-search-box {
+    width: 80%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links div {
+    margin: 10px 0;
+  }
+}
